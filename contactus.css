@@ -1,0 +1,178 @@
+
+
+.contact-signup {
+  background-image: url("https://bluegiftdigital.com/wp-content/uploads/2024/07/Woman-in-Business.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+  height: 83vh;
+}
+.contact-signup-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  min-height: 70vh;
+  justify-content: center;
+  align-content: center;
+}
+
+
+
+.contact-card, .signup-card {
+  background: #fff;
+  border-radius: 38px;
+  box-shadow: 0 4px 24px rgba(40, 40, 80, 0.10);
+  padding: 3rem;
+  min-width: 270px;
+  max-width: 500px;
+  flex: 1 1 300px;
+  line-height: 3;
+  height: 28em;
+  align-content: center;
+}
+ .signup-card{
+  width: 100%;
+ }
+
+.contact-card h3, .signup-card h3 {
+  margin-bottom: -1.5rem;
+  color: #00DB00;
+  font-size: 1.3rem;
+}
+.contact-card h3{
+    margin-left: 25px;
+}
+.contact-card p {
+padding: 1em 2em;
+}
+
+.signup-options {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+  justify-content: center;
+}
+
+.signup-btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  
+}
+
+.signup-btn.trader, .signup-btn.upcycler {
+  background: #00DB00;
+  color: #fff;
+}
+
+
+.signup-btn:hover {
+  filter: brightness(1.1);
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 1.1rem;
+}
+
+.signup-input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.signup-input:focus {
+  border: 1.5px solid #00DB00;
+}
+
+.signup-submit {
+  background: #00DB00;
+  color: #fff;
+  border: none;
+  border-radius: 18px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+
+.signup-submit:hover {
+  background: #00DB00;
+}
+
+.signup-note {
+  margin-top: 0.2rem;
+  color: #444;
+  font-size: 0.98rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+.contact-signup-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .contact-card,
+  .signup-card {
+    max-width: 450px;
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
+}
+@media (max-width: 700px) {
+  .contact-card,
+  .signup-card {
+     min-width: 90vw;
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem;
+  }
+  .contact-signup-container {
+    padding: 1rem 0.2rem;
+  }
+
+  .signup-options {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-card,
+  .signup-card {
+    min-width: 60vw;
+    max-width: 78vw;
+    padding: 1.2rem 0.5rem;
+    height: auto;
+  }
+  .contact-signup {
+    height: auto;
+    padding: 2rem 0.5rem;
+  }
+  .signup-btn.trader, .signup-btn.upcycler {
+    width: 50%;
+    height: 2.5rem;
+  margin-left: 3rem;
+
+  }
+
+}
