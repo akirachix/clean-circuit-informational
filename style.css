@@ -3,59 +3,57 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   color: #222;
   line-height: 1.6;
 }
-
-
 .container {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
 }
-
 .header {
-  background-color: white;
-  padding: 1rem 0;
+  /* background-color: white; */
+  width: 100%;
+  height: 50px;
+  padding: -50px;
   position: sticky;
-  top: 0;
-  z-index: 1000;
+  z-index: 100;
+  margin-top: 1%;
 }
-
-.logo {
-  font-weight: bold;
+#logo {
+  position:staticy;
+  width: 8%;
+  height: 18%;
+  margin-top: -3.5%;
+  /* font-weight: bold;
   font-size: 1.5rem;
-  color: #10C46D;
-  letter-spacing: 1px;
+  color: #00DB00;
+  letter-spacing: 1px; */
 }
-
 .nav {
+  background-color: white;
+  ;
   display: flex;
   gap: 1.5rem;
   margin-top: 0.5rem;
 }
-
 .nav a {
   text-decoration: none;
   color: #222;
   font-weight: 500;
   transition: color 0.2s;
+  margin-top: -5%;
 }
-
 .nav a:hover {
-  color: #10C46D;
+  color: #00DB00;
 }
-
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-
 .hero {
   background: url(images/photo1.jpg) center/cover no-repeat;
   height:100vh;
@@ -64,37 +62,31 @@ body {
   color: #fff;
   position: relative;
 }
-
 .hero::after {
   content: "";
   background: rgba(23, 51, 34, 0.55);
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
 }
-
 .hero-content {
   position: relative;
   z-index: 1;
   padding: 3rem 0;
 }
-
 .hero-text h1 {
   font-size: 6rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
-
 .hero-text h1 span {
-  color: #10C46D;
+  color: #00DB00;
 }
-
 .hero-text p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
 }
-
 .btn {
-  background: #10C46D;
+  background: #00DB00;
   color: #fff;
   padding: 0.75rem 2rem;
   border: none;
@@ -104,26 +96,21 @@ body {
   text-decoration: none;
   transition: background 0.2s;
 }
-
 .btn:hover {
-  background: #0ea65e;
+  background: #00DB00;
 }
-
 .about {
   background: #fff;
   padding: 2.5rem 0 2rem 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #E5E5E5;
   height: 70vh;
-  
 }
-
 .about-container {
   display: flex;
   gap: 8em;
   align-items: center;
   flex-wrap: wrap;
 }
-
 .about-img img {
   width: 100%;
   height: 60vh;
@@ -131,66 +118,52 @@ body {
   object-fit: cover;
   box-shadow: 0 2px 16px rgba(0,0,0,0.08);
 }
-
 .about-info {
   flex: 1.5;
   font-size: 1em;
-  
 }
-
 .about-info h2 {
-  color: #10C46D;
+  color: #00DB00;
   margin-bottom: 2rem;
   font-size: 2em;
 }
-
 .about-info h3 {
   margin-bottom: 0.6rem;
 }
-
 .about-info p {
   margin-bottom: 1.2rem;
 }
-
 .btn-secondary {
   background: #fff;
-  color: #10C46D;
-  border: 2px solid #10C46D;
+  color: #00DB00;
+  border: 2px solid #00DB00;
   padding: 0.6rem 1.5rem;
   border-radius: 20px;
   text-decoration: none;
-  font-weight: 500;
-
+  font-weight: 900;
 }
-
 .btn-secondary:hover {
-  background: #10C46D;
+  background: #00DB00;
   color: #fff;
 }
-
 .how-it-works {
   padding: 2.5rem 0 2rem 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #E5E5E5;
   height: 80vh;
-  
 }
-
 .how-it-works h2 {
-  color: #10C46D;
+  color: #00DB00;
   text-align: center;
   margin-bottom: 1.8rem;
   font-size: 2em;
 }
-
 .steps {
   display: flex;
   justify-content: center;
   gap: 4em;
   flex-wrap: wrap;
-  border: 1.5px solid #10C46D;
- 
+  border: 1.5px solid #00DB00;
 }
-
 .step {
   background: #fff;
   border-radius: 14px;
@@ -199,7 +172,6 @@ body {
   width: 20em;
   box-shadow: 0 2px 8px rgba(16,196,109,0.03);
 }
-
 .step img {
   width: 15em;
   height: 30vh;
@@ -207,22 +179,19 @@ body {
   object-fit: cover;
   margin-bottom: 0.5rem;
 }
-
 .step p {
   font-weight: 500;
-} 
+}
 #request{
 margin-top: 10em;
 }
-
-
 .contact-signup {
   background-image: url("https://bluegiftdigital.com/wp-content/uploads/2024/07/Woman-in-Business.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 2rem 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #E5E5E5;
   position: relative;
 }
 .contact-signup-container {
@@ -231,9 +200,6 @@ margin-top: 10em;
   gap: 2rem;
   min-height: 70vh;
 }
-
-
-
 .contact-card, .signup-card {
   background: #fff;
   border-radius: 18px;
@@ -248,24 +214,21 @@ margin-top: 10em;
  .signup-card{
   width: 100%;
  }
-
 .contact-card h3, .signup-card h3 {
   margin-top: 0;
   margin-bottom: 1.2rem;
-  color: #16C60C;
+  color: #00DB00;
   font-size: 1.3rem;
 }
 .contact-card p {
 padding: 1em 2em;
 }
-
 .signup-options {
   display: flex;
   gap: 1rem;
   margin-bottom: 1.2rem;
   justify-content: center;
 }
-
 .signup-btn {
   padding: 0.7rem 1.5rem;
   border: none;
@@ -278,26 +241,20 @@ padding: 1em 2em;
   display: inline-block;
   cursor: pointer;
   width: 100%;
-  
 }
-
 .signup-btn.trader, .signup-btn.upcycler {
-  background: #10C46D;
+  background: #00DB00;
   color: #fff;
 }
-
-
 .signup-btn:hover {
   filter: brightness(1.1);
 }
-
 .signup-form {
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
   margin-bottom: 1.1rem;
 }
-
 .signup-input {
   padding: 0.7rem 1rem;
   border: 1px solid #ccc;
@@ -306,13 +263,11 @@ padding: 1em 2em;
   outline: none;
   transition: border 0.2s;
 }
-
 .signup-input:focus {
-  border: 1.5px solid #10C46D;
+  border: 1.5px solid #00DB00;
 }
-
 .signup-submit {
-  background: #10C46D;
+  background: #00DB00;
   color: #fff;
   border: none;
   border-radius: 18px;
@@ -323,28 +278,21 @@ padding: 1em 2em;
   margin-top: 0.5rem;
   transition: background 0.2s;
 }
-
 .signup-submit:hover {
-  background: #0e9e57;
+  background: #00DB00;
 }
-
 .signup-note {
   margin-top: 0.8rem;
   color: #444;
   font-size: 0.98rem;
   text-align: center;
 }
-
-
-
-
 .footer {
-  background: #0a2621;
-  color: #e5e5e5;
+  background: #0A2621;
+  color: #E5E5E5;
   padding: 1.5rem 0 1rem 0;
   text-align: center;
 }
-
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -357,18 +305,15 @@ padding: 1em 2em;
   flex-direction: column;
   gap: 2.5em;
 }
-
 .footer-logo {
   font-weight: bold;
   font-size: 1.3rem;
-  color: #10C46D;
+  color: #00DB00;
   letter-spacing: 1px;
 }
-
 .fa-youtube, .fa-square-instagram{
   color: red;
 }
-
 .explore{
   display: flex;
   flex-direction: column;
@@ -379,11 +324,92 @@ padding: 1em 2em;
 >a:hover{
   color: blue;
 }
-
 }
-
 .footer-bottom {
   font-size: 0.92rem;
-  color: #7bdba5;
+  color: #00DB00;
 }
+@media (max-width: 900px) {
+  .about-container, .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.7rem;
+  }
+  .about-img {
+    margin-bottom: 1rem;
+  }
+  .steps {
+    gap: 1rem;
+  }
+  .contact-signup-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .contact-card,
+  .signup-card {
+    max-width: 450px;
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+}
+@media (max-width: 700px) {
+  .hero-text h1 {
+    font-size: 1.3rem;
+  }
+  .about-img img {
+    width: 140px;
+    height: 140px;
+  }
+  .contact-card,
+  .signup-card {
+     min-width: 90vw;
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem;
+  }
+  .contact-signup-container {
+    padding: 1rem 0.2rem;
+  }
+  .signup-options {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 98%;
+    padding: 0 0.2rem;
+  }
+  .header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  .nav {
+    gap: 0.9rem;
+    flex-wrap: wrap;
+  }
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .steps {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+  }
+}
+
+
+
+
+
+
+
 
