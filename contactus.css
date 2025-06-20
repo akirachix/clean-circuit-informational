@@ -1,178 +1,284 @@
 
-
-.contact-signup {
-  background-image: url("https://bluegiftdigital.com/wp-content/uploads/2024/07/Woman-in-Business.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 4rem;
-  border-bottom: 1px solid #e5e5e5;
+.contact-join-section {
   position: relative;
-  height: 83vh;
-}
-.contact-signup-container {
+  min-height: 100vh;
+  background: url("https://bluegiftdigital.com/wp-content/uploads/2024/07/Woman-in-Business.webp") center/cover no-repeat;
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  min-height: 70vh;
+  align-items: center;
   justify-content: center;
-  align-content: center;
+  padding: 2rem 1rem;
 }
 
 
 
-.contact-card, .signup-card {
-  background: #fff;
-  border-radius: 38px;
-  box-shadow: 0 4px 24px rgba(40, 40, 80, 0.10);
-  padding: 3rem;
-  min-width: 270px;
-  max-width: 500px;
-  flex: 1 1 300px;
-  line-height: 3;
-  height: 28em;
-  align-content: center;
-}
- .signup-card{
+.container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 10rem;
+  max-width: 1200px;
   width: 100%;
- }
-
-.contact-card h3, .signup-card h3 {
-  margin-bottom: -1.5rem;
-  color: #00DB00;
-  font-size: 1.3rem;
-}
-.contact-card h3{
-    margin-left: 25px;
-}
-.contact-card p {
-padding: 1em 2em;
-}
-
-.signup-options {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1.2rem;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.contact-card, .joinus-card {
+  background: #fff;
+  border-radius: 45px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 1rem 1.5rem 2rem 1.5rem; 
+  flex: 1 1 300px;
+  box-sizing: border-box;
+  height: 67vh;
+}
+.joinus-card{
+  width: 850px;
+  height: 70vh;
+ line-height: 2;
+}
+
+.contact-card h4,
+.joinus-card h4 {
+  color:#00DB00;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact-card p {
+  margin: 0.7em 0;
+  font-size: 1.5rem;
+  line-height: 3.5;
+}
+
+.joinus-card .subtitle {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #222;
+  text-align: center;
+ 
+}
+
+.role-buttons {
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  width: 92%;
+}
+
+.role-buttons button {
+  flex: 1;
+  padding: 0.7em 0;
+  border: none;
+  border-radius: 16px;
+  background: #00DB00;
+  color: #fdfdfd;
+  font-weight: 600;
+  cursor: pointer;
+  height: 50px;
+  transition: background 0.2s;
+}
+
+.role-buttons .active,
+.role-buttons button:hover {
+  background: #e6e6e6;
+  color: #222;
+ 
+}
+
+.joinus-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.joinus-card input {
+  padding: 0.7em;
+  border: 1px solid #c2c0c0;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 62%;
+   margin-left: 5rem;
 }
 
 .signup-btn {
-  padding: 0.7rem 1.5rem;
-  border: none;
-  border-radius: 20px;
-  font-size: 1rem;
-  text-align: center;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.2s;
-  display: inline-block;
-  cursor: pointer;
-  width: 100%;
-  
-}
-
-.signup-btn.trader, .signup-btn.upcycler {
   background: #00DB00;
   color: #fff;
+  border: none;
+  border-radius: 1.6rem;
+  padding: 0.8em 0;
+  cursor: pointer;
+  transition: background 0.2s;
+  height: 4rem;
+  width: 72%;
+  margin-left: 5rem;
 }
-
 
 .signup-btn:hover {
-  filter: brightness(1.1);
-}
-
-.signup-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
-  margin-bottom: 1.1rem;
-}
-
-.signup-input {
-  padding: 0.7rem 1rem;
-  border: 1px solid #ccc;
-  border-radius: 18px;
-  font-size: 1rem;
-  outline: none;
-  transition: border 0.2s;
-}
-
-.signup-input:focus {
-  border: 1.5px solid #00DB00;
-}
-
-.signup-submit {
-  background: #00DB00;
-  color: #fff;
-  border: none;
-  border-radius: 18px;
-  padding: 0.7rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  margin-top: 0.5rem;
-  transition: background 0.2s;
-}
-
-.signup-submit:hover {
-  background: #00DB00;
-}
-
-.signup-note {
-  margin-top: 0.2rem;
-  color: #444;
-  font-size: 0.98rem;
-  text-align: center;
-}
-
-@media (max-width: 900px) {
-.contact-signup-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  .contact-card,
-  .signup-card {
-    max-width: 450px;
-    width: 100%;
-    padding: 1.5rem 1rem;
-  }
-
-}
-@media (max-width: 700px) {
-  .contact-card,
-  .signup-card {
-     min-width: 90vw;
-    max-width: 98vw;
-    padding: 1.2rem 0.5rem;
-  }
-  .contact-signup-container {
-    padding: 1rem 0.2rem;
-  }
-
-  .signup-options {
-    flex-direction: column;
-    gap: 0.7rem;
-  }
+   background: #e6e6e6;
+   color: #222;
 }
 
 @media (max-width: 500px) {
-  .contact-card,
-  .signup-card {
-    min-width: 60vw;
-    max-width: 78vw;
-    padding: 1.2rem 0.5rem;
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 100vw;
+  }
+  .contact-card, .joinus-card {
+    max-width: 98vw;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    border-radius: 20px;
     height: auto;
   }
-  .contact-signup {
-    height: auto;
-    padding: 2rem 0.5rem;
+  .contact-card h4,
+  .joinus-card h4 {
+    font-size: 1.3rem;
   }
-  .signup-btn.trader, .signup-btn.upcycler {
-    width: 50%;
+  .contact-card p {
+    font-size: 1rem;
+    line-height: 2;
+  }
+  .joinus-card .subtitle {
+    font-size: 0.9rem;
+  }
+  .role-buttons {
+    gap: 0.5rem;
+    margin-left: 0;
+    width: 100%;
+  }
+  .role-buttons button {
+    font-size: 0.95rem;
+    padding: 0.5em 0;
     height: 2.5rem;
-  margin-left: 3rem;
-
   }
+  .joinus-card input,
+  .signup-btn {
+    width: 95%;
+    margin-left: 0;
+    font-size: 1rem;
+    height: 2.5rem;
+  }
+  .signup-btn {
+    border-radius: 1rem;
+    padding: 0.5em 0;
+    height: 2.5rem;
+  }
+}
 
+@media (min-width: 501px) and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 95vw;
+  }
+  .contact-card, .joinus-card {
+    max-width: 90vw;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    margin: 0.7rem 0;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    height: auto;
+  }
+  .contact-card h4,
+  .joinus-card h4 {
+    font-size: 1.7rem;
+  }
+  .contact-card p {
+    font-size: 1.2rem;
+    line-height: 2.5;
+  }
+  .joinus-card .subtitle {
+    font-size: 1rem;
+  }
+  .role-buttons {
+    gap: 1rem;
+    margin-left: 0.5rem;
+    width: 98%;
+  }
+  .role-buttons button {
+    font-size: 1.05rem;
+    padding: 0.6em 0;
+    height: 2.7rem;
+  }
+  .joinus-card input,
+  .signup-btn {
+    width: 85%;
+    margin-left: 1.5rem;
+    font-size: 1.05rem;
+    height: 2.7rem;
+  }
+  .signup-btn {
+    border-radius: 1.2rem;
+    padding: 0.6em 0;
+    height: 2.7rem;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1500px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1100px;
+  }
+  .contact-card {
+    max-width: 350px;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    border-radius: 45px;
+    height: auto;
+  }
+  .joinus-card {
+    max-width: 600px;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    border-radius: 45px;
+    height: auto;
+  }
+  .contact-card h4,
+  .joinus-card h4 {
+    font-size: 2rem;
+  }
+  .contact-card p {
+    font-size: 1.3rem;
+    line-height: 2.5;
+  }
+  .joinus-card .subtitle {
+    font-size: 1.05rem;
+  }
+  .role-buttons {
+    gap: 2rem;
+    margin-left: 2rem;
+    width: 92%;
+  }
+  .role-buttons button {
+    font-size: 1.1rem;
+    padding: 0.7em 0;
+    height: 3rem;
+  }
+  .joinus-card input,
+  .signup-btn {
+    width: 62%;
+    margin-left: 5rem;
+    font-size: 1.1rem;
+    height: 3rem;
+  }
+  .signup-btn {
+    border-radius: 1.6rem;
+    padding: 0.8em 0;
+    height: 3rem;
+  }
 }
