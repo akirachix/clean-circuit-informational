@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  color: #222;
+  /* color: #222; */
   line-height: 1.6;
 }
 .container {
@@ -47,7 +47,7 @@ body {
 }
 .hero {
   background: url(images/photo1.jpg) center/cover no-repeat;
-  height:100vh;
+  height:95vh;
   display: flex;
   align-items: center;
   color: #fff;
@@ -67,14 +67,17 @@ body {
 .hero-text h1 {
   font-size: 6rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: -1rem;
 }
 .hero-text h1 span {
   color: #00DB00;
 }
 .hero-text p {
   font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.hero-text{
+  margin-top: -15%;
 }
 .btn {
   background: #00DB00;
