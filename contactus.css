@@ -1,284 +1,148 @@
+  body {
+      margin: 0;
+      font-family: 'Inter', Arial, sans-serif;
+      background: url("https://bluegiftdigital.com/wp-content/uploads/2024/07/Woman-in-Business.webp") center/cover no-repeat fixed;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .overlay {
+      position: fixed;
+      top:0; left:0; width:100vw; height:100vh;
+      background: rgba(255,255,255,0.0);
+      z-index: 0;
+    }
+    .main-flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      gap: 150px;
+      position: relative;
+      z-index: 1;
+    }
+    .label-green{
+      color: #00db00;
+      font-weight: 500;
+      font-size: 27px;
+      margin-bottom: 8px;
+    }
+     .label-green-join{
+      color: #00db00;
+      font-weight: 500;
+      font-size: 20px;
+      margin-bottom: -3px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 36px;
+      box-shadow: 0 2px 24px rgba(0,0,0,0.08);
+      padding: 40px 36px;
+      min-width: 340px;
+      max-width: 380px;
+      min-height: 340px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 3;
+    }
+    #signu-up-card{
+       background: #fff;
+      border-radius: 36px;
+      box-shadow: 0 2px 24px rgba(0,0,0,0.08);
+      padding: 40px 36px;
+      min-width: 340px;
+      max-width: 400px;
+      height: 470px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 3;
 
-.contact-join-section {
-  position: relative;
-  min-height: 100vh;
-  background: url("https://bluegiftdigital.com/wp-content/uploads/2024/07/Woman-in-Business.webp") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 1rem;
-}
-
-
-
-.container {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  gap: 10rem;
-  max-width: 1200px;
-  width: 100%;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-
-.contact-card, .joinus-card {
-  background: #fff;
-  border-radius: 45px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-  padding: 1rem 1.5rem 2rem 1.5rem; 
-  flex: 1 1 300px;
-  box-sizing: border-box;
-  height: 67vh;
-}
-.joinus-card{
-  width: 850px;
-  height: 70vh;
- line-height: 2;
-}
-
-.contact-card h4,
-.joinus-card h4 {
-  color:#00DB00;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.contact-card p {
-  margin: 0.7em 0;
-  font-size: 1.5rem;
-  line-height: 3.5;
-}
-
-.joinus-card .subtitle {
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-  color: #222;
-  text-align: center;
+    }
  
-}
-
-.role-buttons {
-  display: flex;
-  gap: 5rem;
-  margin-bottom: 1rem;
-  margin-left: 2rem;
-  width: 92%;
-}
-
-.role-buttons button {
-  flex: 1;
-  padding: 0.7em 0;
-  border: none;
-  border-radius: 16px;
-  background: #00DB00;
-  color: #fdfdfd;
-  font-weight: 600;
-  cursor: pointer;
-  height: 50px;
-  transition: background 0.2s;
-}
-
-.role-buttons .active,
-.role-buttons button:hover {
-  background: #e6e6e6;
-  color: #222;
- 
-}
-
-.joinus-card form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-}
-
-.joinus-card input {
-  padding: 0.7em;
-  border: 1px solid #c2c0c0;
-  border-radius: 8px;
-  font-size: 1rem;
-  width: 62%;
-   margin-left: 5rem;
-}
-
-.signup-btn {
-  background: #00DB00;
-  color: #fff;
-  border: none;
-  border-radius: 1.6rem;
-  padding: 0.8em 0;
-  cursor: pointer;
-  transition: background 0.2s;
-  height: 4rem;
-  width: 72%;
-  margin-left: 5rem;
-}
-
-.signup-btn:hover {
-   background: #e6e6e6;
-   color: #222;
-}
-
-@media (max-width: 500px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    max-width: 100vw;
-  }
-  .contact-card, .joinus-card {
-    max-width: 98vw;
-    width: 100%;
-    padding: 1rem 0.5rem;
-    margin: 0.5rem 0;
-    font-size: 1rem;
-    border-radius: 20px;
-    height: auto;
-  }
-  .contact-card h4,
-  .joinus-card h4 {
-    font-size: 1.3rem;
-  }
-  .contact-card p {
-    font-size: 1rem;
-    line-height: 2;
-  }
-  .joinus-card .subtitle {
-    font-size: 0.9rem;
-  }
-  .role-buttons {
-    gap: 0.5rem;
-    margin-left: 0;
-    width: 100%;
-  }
-  .role-buttons button {
-    font-size: 0.95rem;
-    padding: 0.5em 0;
-    height: 2.5rem;
-  }
-  .joinus-card input,
-  .signup-btn {
-    width: 95%;
-    margin-left: 0;
-    font-size: 1rem;
-    height: 2.5rem;
-  }
-  .signup-btn {
-    border-radius: 1rem;
-    padding: 0.5em 0;
-    height: 2.5rem;
-  }
-}
-
-@media (min-width: 501px) and (max-width: 900px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    max-width: 95vw;
-  }
-  .contact-card, .joinus-card {
-    max-width: 90vw;
-    width: 100%;
-    padding: 1.5rem 1rem;
-    margin: 0.7rem 0;
-    font-size: 1.1rem;
-    border-radius: 30px;
-    height: auto;
-  }
-  .contact-card h4,
-  .joinus-card h4 {
-    font-size: 1.7rem;
-  }
-  .contact-card p {
-    font-size: 1.2rem;
-    line-height: 2.5;
-  }
-  .joinus-card .subtitle {
-    font-size: 1rem;
-  }
-  .role-buttons {
-    gap: 1rem;
-    margin-left: 0.5rem;
-    width: 98%;
-  }
-  .role-buttons button {
-    font-size: 1.05rem;
-    padding: 0.6em 0;
-    height: 2.7rem;
-  }
-  .joinus-card input,
-  .signup-btn {
-    width: 85%;
-    margin-left: 1.5rem;
-    font-size: 1.05rem;
-    height: 2.7rem;
-  }
-  .signup-btn {
-    border-radius: 1.2rem;
-    padding: 0.6em 0;
-    height: 2.7rem;
-  }
-}
-
-@media (min-width: 901px) and (max-width: 1500px) {
-  .container {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 2rem;
-    max-width: 1100px;
-  }
-  .contact-card {
-    max-width: 350px;
-    width: 100%;
-    padding: 2rem 1.5rem;
-    margin: 1rem 0;
-    font-size: 1.1rem;
-    border-radius: 45px;
-    height: auto;
-  }
-  .joinus-card {
-    max-width: 600px;
-    width: 100%;
-    padding: 2rem 1.5rem;
-    margin: 1rem 0;
-    font-size: 1.1rem;
-    border-radius: 45px;
-    height: auto;
-  }
-  .contact-card h4,
-  .joinus-card h4 {
-    font-size: 2rem;
-  }
-  .contact-card p {
-    font-size: 1.3rem;
-    line-height: 2.5;
-  }
-  .joinus-card .subtitle {
-    font-size: 1.05rem;
-  }
-  .role-buttons {
-    gap: 2rem;
-    margin-left: 2rem;
-    width: 92%;
-  }
-  .role-buttons button {
-    font-size: 1.1rem;
-    padding: 0.7em 0;
-    height: 3rem;
-  }
-  .joinus-card input,
-  .signup-btn {
-    width: 62%;
-    margin-left: 5rem;
-    font-size: 1.1rem;
-    height: 3rem;
-  }
-  .signup-btn {
-    border-radius: 1.6rem;
-    padding: 0.8em 0;
-    height: 3rem;
-  }
-}
+    .contact-text {
+      color: #222;
+      font-size: 20px;
+      margin-bottom: 0.1em;
+    }
+    .join-subtitle {
+      color: #000000;
+      font-size: 17px;
+      margin: 0 0 20px 0;
+      text-align: center;
+    }
+    .role-btn-row {
+      display: flex;
+      flex-direction: row;
+      gap: 18px;
+      margin-bottom: 16px;
+      justify-content: center;
+      font: weight 100px;;
+    }
+    .role-btn {
+      flex: 1;
+      color:white;
+      background-color: #00db00;
+      border: none;
+      border-radius: 16px;
+      padding: 12px 0;
+      font-weight: 600;
+      font-size: 17px;
+      cursor: pointer;
+      font-family: 'Inter', Arial, sans-serif;
+    }
+    .role-btn.active {
+      background:#00db00;
+      color: #fff;
+    }
+    .form-input {
+      width: 100%;
+      border: 2px solid #bebcbc;
+      border-radius: 10px;
+      outline: none;
+      padding: 13px 15px;
+      margin-bottom: 12px;
+      font-size: 16px;
+      font-family: 'Inter', Arial, sans-serif;
+      box-sizing: border-box;
+      background: #F6F6F6;
+      font-weight: 600;
+   
+     
+    }
+    .sign-up-btn {
+      width: 100%;
+      background:#00db00;
+      color: #fff;
+      border: none;
+      border-radius: 16px;
+      font-weight: 400;
+      font-size: 20px;
+      padding: 14px;
+      cursor: pointer;
+      margin-top: 8px;
+      font-family: 'Inter', Arial, sans-serif;
+      box-shadow: 0 2px 8px #00d12c33;
+      transition: background .15s;
+    }
+    @media (max-width: 900px) {
+      .main-flex {
+        flex-direction: column;
+        gap: 32px;
+        padding: 32px 0;
+      }
+      .card {
+        min-width: 70vw;
+        max-width: 95vw;
+      }
+    }
+    @media (max-width: 600px) {
+      .card {
+        padding: 24px 8vw;
+        border-radius: 22px;
+      }
+      .contact-text, .form-input, .role-btn, .sign-up-btn {
+        font-size: 15px;
+      }
+    }

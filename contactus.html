@@ -6,32 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
   <link rel="stylesheet" href="contactus.css">
+  <script src="contactus.js"></script>
 </head>
 <body>
-  <section class="contact-join-section">
-  <div class="container">
-    <div class="contact-card">
-      <h4>Contact Us</h4>
-      <p><strong>Email:</strong> renewit@gmail.com</p>
-      <p><strong>Phone:</strong> +254 7 68 719 803</p>
-      <p><strong>Location:</strong> Nairobi, Kenya</p>
+ <div class="overlay"></div>
+  <div class="main-flex">
+    <div class="card">
+      <div class="label-green">Contact Us</div>
+      <div class="contact-text"><strong>Email:</strong> renewit@gmail.com</div>
+      <div class="contact-text"><strong>Phone:</strong> +254 7 68 719 803</div>
+      <div class="contact-text"><strong>Location:</strong> Nairobi, Kenya</div>
     </div>
-    <div class="joinus-card">
-      <h4>Join Us</h4>
-      <p class="subtitle">Choose your role to start your journey with us!</p>
-      <div class="role-buttons">
-        <button >Trader</button>
-        <button>Upcycler</button>
+    <div class="card" id="signu-up-card">
+      <div class="label-green-join">Join Us</div>
+      <div class="join-subtitle">
+        Choose your role to start your journey with us!
       </div>
-      <form>
-        <input type="text" placeholder="full name" required>
-        <input type="email" placeholder="email" required>
-        <input type="password" placeholder="password" required>
-        <button type="submit" class="signup-btn">Sign Up</button>
+      <div class="role-btn-row">
+        <button class="role-btn active" type="button" id="traderBtn">Trader</button>
+        <button class="role-btn" type="button" id="upcyclerBtn">Upcycler</button>
+      </div>
+      <form autocomplete="off" onsubmit="event.preventDefault();">
+        <input class="form-input" type="text" placeholder="Full name" id="fullnameInput" required />
+        <input class="form-input" type="email" placeholder="Email" id="emailInput" required />
+        <input class="form-input" type="password" placeholder="Password" id="passwordInput" required />
+        <input class="form-input" type="password" placeholder="Confirm Password" id="passwordInput" required />
+        <button class="sign-up-btn" type="submit">Sign up</button>
       </form>
     </div>
   </div>
-</section>
 </body>
 
 </html>
