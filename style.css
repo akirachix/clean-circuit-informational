@@ -99,7 +99,7 @@ nav {
   font-weight: 400;
   letter-spacing: 0.01em;
 }
-.btn, .btn1 {
+.get-started, .create-account {
   display: inline-block;
   border-radius: 2em;
   padding: 0.85em 2.3em;
@@ -110,22 +110,22 @@ nav {
   text-decoration: none;
   margin-right: 1.1em;
 }
-.btn {
+.get-started {
   background: #00DB00;
   color: #fff;
   border: 2px solid #00DB00;
 }
-.btn:hover, .btn:focus {
+.get-started:hover, .btn:focus {
   background: #00B900;
   border-color: #00B900;
   color: #fff;
 }
-.btn1 {
+.create-account {
   background-color: #fff;
   color: #222;
   margin-left: 0;
 }
-.btn1:hover, .btn1:focus {
+.create-account:hover, .btn1:focus {
   background: #00DB00;
   color: #fff;
   border-color: #00DB00;
@@ -216,7 +216,7 @@ nav {
   .hero-text p {
     font-size: 1rem;
   }
-  .btn, .btn1 {
+  .get-started, .create-account {
     width: 100%;
     max-width: 220px;
     padding: 0.7em 0;
@@ -249,7 +249,7 @@ nav {
   .hero-text p {
     font-size: 1.5rem;
   }
-  .btn, .btn1 {
+  .get-started, .create-account {
     font-size: 1rem;
     padding: 0.7em 1.5em;
   }
@@ -279,7 +279,7 @@ nav {
   .hero-text p {
     font-size: 1.18rem;
   }
-  .btn, .btn1 {
+  .get-started, .create-account {
     font-size: 1.1rem;
     padding: 0.8em 2em;
   }
