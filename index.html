@@ -14,16 +14,45 @@
       </div>
       <div class="about-info">
         <h2>About Us</h2>
-        <strong>Our story</strong>
-        <p>Born from the realization that discarded <br>materials have great potential.</p>
-        <strong>Mission</strong>
-        <p>Our mission is to create a platform to <br>connect innovative upcyclers with traders.</p>
-        <strong>Vision</strong>
-        <p>Our vision is to inspire a shift towards <br>eco-friendly practices and reduce textile <br>waste.</p>
+        <strong id="about-info-text">Our story</strong>
+        <p>Born from the realization that discarded materials have great potential.</p>
+        <strong id="about-info-text">Mission</strong>
+        <p>Our mission is to create a platform to connect innovative upcyclers with traders.</p>
+        <strong id="about-info-text">Vision</strong>
+        <p>Our vision is to inspire a shift towards eco-friendly practices and reduce textile waste.</p>
         <a href="#" class="learn-more">Learn More</a>
       </div>
     </div>
   </section>
-  
+  <!-- Contact Us -->
+   <section class="contact-section">
+ <div class="overlay"></div>
+  <div class="main-flex">
+    <div class="card" id="contact-card">
+      <div class="label-green">Contact Us</div>
+      <div class="contact-text"><strong>Email:</strong> renewit@gmail.com</div>
+      <div class="contact-text"><strong>Phone:</strong> +254 7 68 719 803</div>
+      <div class="contact-text"><strong>Location:</strong> Nairobi, Kenya</div>
+    </div>
+    <div class="card" id="signu-up-card">
+      <div class="label-green">Join Us</div>
+      <div class="join-subtitle">
+        Choose your role to start your journey with us!
+      </div>
+      <div class="role-btn-row">
+        <button class="role-btn active" type="button" id="traderBtn">Trader</button>
+        <button class="role-btn" type="button" id="upcyclerBtn">Upcycler</button>
+      </div>
+      <form autocomplete="off" onsubmit="event.preventDefault();">
+        <input class="form-input" type="text" placeholder="Full name" id="fullnameInput" required />
+        <input class="form-input" type="email" placeholder="Email" id="emailInput" required />
+        <input class="form-input" type="password" placeholder="Password" id="passwordInput" required />
+        <input class="form-input" type="password" placeholder="Confirm Password" id="passwordInput" required />
+        <button class="sign-up-btn" type="submit">Sign up</button>
+      </form>
+    </div>
+  </div>
+  </section>
+  <script src="index.js"></script>
 </body>
 </html>
