@@ -20,3 +20,6 @@
       const email = document.getElementById('emailInput').value.trim();
       const password = document.getElementById('passwordInput').value;
     });
+    document.getElementsByClassName('link').addEventListener('click', ()=>{
+      
+    })
