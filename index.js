@@ -7,13 +7,16 @@ const link2=document.getElementById('link2');
 const link3=document.getElementById('link3');
 const link4=document.getElementById('link4');
 openMenu.addEventListener('click', () => {
+  openMenu.style.display='none';
   navMenu.classList.add('active');
+  
  
 });
  
 closeMenu.addEventListener('click', () => {
   
   navMenu.classList.remove('active');
+  openMenu.style.display='';
  
 });
 
