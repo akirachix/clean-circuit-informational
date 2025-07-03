@@ -4,58 +4,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Footer</title>
+  <title>Renewit</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 
 <body>
+  <!-- Landing Page -->
+  <div class="header">
+    
+    <nav>
+      <img src="Images/logo.png" id="logo">
+
+      <div class="hamburger" id="openMenu">
+        <i class="fa fa-bars"></i>
+      </div>
+      <div class="nav-menu" id="navMenu">
+        <div class="close-btn" id="closeMenu">
+          <i class="fa fa-times"></i>
+        </div>
+
+        <a class="link" href="#" id="link1">Home</a>
+        <a class="link" href="#about" id="link2">About Us</a>
+        <a class="link" href="#how-it-works" id="link4">Support</a>
+        <a class="link" href="#main-flex" id="link3">Contact Us</a>
+
+
+      </div>
+    </nav>
+  </div>
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Connect.<span>Create.</span>Trade</h1>
+        <p>Embracing the power of imagination and innovation to create a sustainable future.</p>
+        <a href="#" class="get-started">Get Started</a>
+        <a href="card" class="create-account">Create Account</a>
+      </div>
+    </div>
+  </section>
+  <!-- About Us -->
+  <section class="about" id="about">
+    <div class="about-container">
+      <div class="about-img">
+        <img src="images/fast-fashion-concept-with-piles-clothes.jpg" alt="About Us">
+      </div>
+      <div class="about-info">
+        <h2>About Us</h2>
+        <strong id="about-info-text">Our story</strong>
+        <p>Born from the realization that discarded materials have great potential.</p>
+        <strong id="about-info-text">Mission</strong>
+        <p>Our mission is to create a platform to connect innovative upcyclers with traders.</p>
+        <strong id="about-info-text">Vision</strong>
+        <p>Our vision is to inspire a shift towards eco-friendly practices and reduce textile waste.</p>
+        <a href="#" class="learn-more">Learn More</a>
+      </div>
+    </div>
+  </section>
+  <!-- How it Works -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="main-container">
+      <h2>How it works</h2>
+      <div class="content-container">
+        <div class="text-image">
+          <img src="images/update.jpeg" alt="Browse">
+          <p>Browse</p>
+        </div>
+        <div class="text-image" id="request">
+          <img src="images/request.jpeg" alt="Request">
+          <p>Request</p>
+        </div>
+        <div class="text-image">
+          <img src="images/pay.jpeg" alt="Pay">
+          <p>Pay</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Us -->
+  <section class="contact-section">
+    <div class="overlay"></div>
+    <div class="main-flex" id="main-flex">
+      <div class="card" id="contact-card">
+        <div class="label-green">Contact Us</div>
+        <div class="contact-text"><strong>Email:</strong> renewit@gmail.com</div>
+        <div class="contact-text"><strong>Phone:</strong> +254 7 68 719 803</div>
+        <div class="contact-text"><strong>Location:</strong> Nairobi, Kenya</div>
+      </div>
+      <div class="card" id="signu-up-card">
+        <div class="label-green">Join Us</div>
+        <div class="join-subtitle">
+          Choose your role to start your journey with us!
+        </div>
+        <div class="role-btn-row">
+          <button class="role-btn active" type="button" id="traderBtn">Trader</button>
+          <button class="role-btn" type="button" id="upcyclerBtn">Upcycler</button>
+        </div>
+        <form autocomplete="off" onsubmit="event.preventDefault();">
+          <input class="form-input" type="text" placeholder="Full name" id="fullnameInput" required />
+          <input class="form-input" type="email" placeholder="Email" id="emailInput" required />
+          <input class="form-input" type="password" placeholder="Password" id="passwordInput" required />
+          <input class="form-input" type="password" placeholder="Confirm Password" id="passwordInput" required />
+          <button class="sign-up-btn" type="submit">Sign up</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <div class="logo">
+        <div class="logos">
 
-          <img src="Images/logo.png" alt="logo" id="logo">
+          <img src="Images/logo.png" alt="logo" id="bottom-logo">
           <div class="logo-text">
             <h4><span style="color:greenyellow ;">RenewIt</span></h4>
-            <p>Bring your imaginations</p>
-              <p>to life and inspire change</p>
+            <p>Bring your imaginations to life and inspire change</p>
           </div>
         </div>
 
         <div class="quick-links">
           <h4><span style="color: greenyellow;">Quick Links</span></h4>
-         <div class="links">
-          <a href="#hero">Home</a>
-          <a href="#about">About us</a>
-          <a href="#contact-signup">contact us</a>
-          <a href="#">Support</a>
+          <div class="links">
+            <a href="#hero">Home</a>
+            <a href="#about">About us</a>
+            <a href="#contact-signup">contact us</a>
+            <a href="#">Support</a>
           </div>
         </div>
 
         <div class="footer-socials">
           <h4><span style="color: greenyellow;">Get In touch with us!</span></h4>
           <div class="text-icon">
-          <p><i class="fa-solid fa-envelope" style="color: #fafafa;"></i> renewit@gmail.com</p>
-          <p><i class="fa-solid fa-phone" style="color: #fafafa;" id="phone"></i> +254 11 453 678</p>
-          <div class="icons">
-            <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
-            <i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i>
-            <i class="fa-brands fa-facebook" style="color: #efeff1;"></i>
+            <p><i class="fa-solid fa-envelope" style="color: #fafafa;"></i> renewit@gmail.com</p>
+            <p><i class="fa-solid fa-phone" style="color: #fafafa;" id="phone"></i> +254 11 453 678</p>
+            <div class="icons">
+              <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+              <i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i>
+              <i class="fa-brands fa-facebook" style="color: #efeff1;"></i>
             </div>
           </div>
 
         </div>
       </div>
       <div class="footer-bottom">
-        <hr id = "hr-line">
+        <hr id="hr-line">
         &copy; 2025 RenewIt.All rights reserved.
       </div>
     </div>
   </footer>
+  <script src="index.js"></script>
+
 </body>
 
 </html>
